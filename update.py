@@ -1,3 +1,5 @@
+from datetime import datetime
+
 begin_time = datetime.now()
 
 import argparse
@@ -34,7 +36,7 @@ def user_interface():
     resultlist.append(args.input)
     resultlist.append(args.output)
     resultlist.append(args.separator)
-    resultlist.append(args.field)
+    resultlist.append(args.attribute)
     resultlist.append(args.null)
     resultlist.append(args.value)
     resultlist.append(args.tolerance)
@@ -483,5 +485,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-time = datetime.now() - begin_time
-print("The runtime was: " + str(time))
+from datetime import datetime
+
+print("The runtime was: " + str(datetime.now() - begin_time))
